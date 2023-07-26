@@ -1,6 +1,6 @@
-import User from "./User";
-import ListNames from "./ListNames";
-import Col from "./Col";
+import User from "../components/User";
+import ListNames from "../components/ListNames";
+import Col from "../components/Col";
 
 // variabili
 const customStyle = {

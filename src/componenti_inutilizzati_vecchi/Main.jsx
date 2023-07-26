@@ -1,5 +1,5 @@
-import Col from "./Col";
-import TodoList from "./TodoList";
+import Col from "../components/Col";
+import TodoList from "../components/TodoList";
 
 export default function Main(props) {
     return (
