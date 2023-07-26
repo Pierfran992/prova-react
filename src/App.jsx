@@ -14,6 +14,30 @@ const user = {
   image: "https://github.com/lifeisfoo.png",
 };
 
+const lists = [
+  { id: 1, name: "Importante", undone_count: 0 },
+  { id: 2, name: "Filma da vedere", undone_count: 2 },
+  { id: 3, name: "Libri da leggere", undone_count: 0 },
+];
+
+const todos = [
+  {
+    id: 1,
+    done: false,
+    text: "Prima Attività",
+  },
+  {
+    id: 2,
+    done: true,
+    text: "Seconda Attività",
+  },
+  {
+    id: 3,
+    done: false,
+    text: "Terza Attività",
+  },
+];
+
 const customStyle = {
   boxShadow: "inset -1px 0 0 rgba(0, 0, 0, 0.1)",
 };
@@ -28,12 +52,12 @@ function App() {
       <LeftCol>
         <User name={user.name} image={user.image} />
         <hr />
-        <ListNames />
+        <ListNames lists={lists} selectedListIdx={1} />
       </LeftCol>
 
       {/* main */}
       <RightCol>
-        <TodoList />
+        <TodoList todos={todos} />
       </RightCol>
     </Layout>
   )
